@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 
 import authRoutes from "./routes/authRoutes.js";
 import projectRoutes from "./routes/projectRoutes.js";
+import taskRoutes from "./routes/taskRoutes.js";
 
 dotenv.config();
 
@@ -36,3 +37,4 @@ mongoose
   });
 
 app.use("/api/projects", projectRoutes);
+app.use("/api/tasks", taskRoutes);
